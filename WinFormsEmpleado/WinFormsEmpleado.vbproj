@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormModelEmpleado.Designer.vb">
+      <DependentUpon>FormModelEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormModelEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPanel.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,10 @@
     <ProjectReference Include="..\WinFormsEmpleado.DAL\WinFormsEmpleado.DAL.vbproj">
       <Project>{a6e34185-1709-4175-aaa2-74756524eb96}</Project>
       <Name>WinFormsEmpleado.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsEmpleado.Models\WinFormsEmpleado.Models.vbproj">
+      <Project>{84f688c1-8b8b-42f9-aca7-17ea626ee93b}</Project>
+      <Name>WinFormsEmpleado.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
