@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Repository\EmpleadoRepository.vb" />
     <Compile Include="Repository\IEmpleadoRepository.vb" />
+    <Compile Include="Repository\IVacacionesRepository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
