@@ -19,6 +19,8 @@ Module Program
     Private Sub SetServiceContainer(services As ServiceCollection)
         services.AddScoped(Of FormPanel)()
         services.AddScoped(Of FormEmpleado)()
+        services.AddScoped(Of FormVacaciones)()
+        services.AddScoped(Of FormVacacionesDetalle)()
 
         services.AddSingleton(Of DBTestContext)()
 
