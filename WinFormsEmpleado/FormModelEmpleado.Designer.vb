@@ -128,7 +128,6 @@ Partial Class FormModelEmpleado
         '
         'btnGuardar
         '
-        Me.btnGuardar.DialogResult = System.Windows.Forms.DialogResult.OK
         Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Silver
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Image = CType(resources.GetObject("btnGuardar.Image"), System.Drawing.Image)

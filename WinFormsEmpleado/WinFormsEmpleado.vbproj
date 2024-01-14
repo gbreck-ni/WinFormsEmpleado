@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9B65D309-848A-41C2-864D-2741AF45B933}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WinFormsEmpleado.My.MyApplication</StartupObject>
+    <StartupObject>WinFormsEmpleado.Program</StartupObject>
     <RootNamespace>WinFormsEmpleado</RootNamespace>
     <AssemblyName>WinFormsEmpleado</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -111,6 +111,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>

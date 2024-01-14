@@ -49,6 +49,7 @@ Public Class FormModelEmpleado
         nuevoEmpleado.FechaIngreso = dateFechaIngreso.Value
         nuevoEmpleado.Direccion = txtDireccion.Text
 
+        Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub
 
