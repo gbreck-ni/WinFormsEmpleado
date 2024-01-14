@@ -80,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repository\EmpleadoRepository.vb" />
     <Compile Include="Repository\IEmpleadoRepository.vb" />
   </ItemGroup>
   <ItemGroup>
