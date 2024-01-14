@@ -40,7 +40,7 @@ Public Class FormVacacionesDetalle
     End Sub
     Private Sub Create()
         _vacaciones.EmpleadoId = _empleado.Id
-        _vacaciones.DiaSolicitado = DateTimePicker1.Value.Date
+        _vacaciones.DiaSolicitado = dateDiaTomado.Value.Date
         _vacacionesService.Insert(_vacaciones)
     End Sub
     Private Sub Read()
@@ -64,6 +64,7 @@ Public Class FormVacacionesDetalle
         DataGridView1.AutoGenerateColumns = False
 
         lblNombreEmpleado.Text = _empleado.NombreCompleto
+        dateDiaTomado.Value = DateTime.Today
         dateFechaInicio.Value = DateTime.Today
         dateFechaFinal.Value = DateTime.Today
         txtDiasGenerados.Text = String.Empty

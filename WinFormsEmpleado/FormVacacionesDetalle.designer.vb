@@ -30,7 +30,7 @@ Partial Class FormVacacionesDetalle
         Me.txtDiasTomados = New System.Windows.Forms.TextBox()
         Me.txtDiasGenerados = New System.Windows.Forms.TextBox()
         Me.txtSaldo = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dateDiaTomado = New System.Windows.Forms.DateTimePicker()
         Me.lblDiasTomados = New System.Windows.Forms.Label()
         Me.lblVacacionesAcumuladas = New System.Windows.Forms.Label()
         Me.lblSaldo = New System.Windows.Forms.Label()
@@ -125,14 +125,14 @@ Partial Class FormVacacionesDetalle
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(6, 27)
-        Me.DateTimePicker1.MaxDate = New Date(2024, 12, 31, 0, 0, 0, 0)
-        Me.DateTimePicker1.MinDate = New Date(1993, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(156, 20)
-        Me.DateTimePicker1.TabIndex = 9
+        Me.dateDiaTomado.CustomFormat = "dd/MM/yyy"
+        Me.dateDiaTomado.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dateDiaTomado.Location = New System.Drawing.Point(6, 27)
+        Me.dateDiaTomado.MaxDate = New Date(2024, 12, 31, 0, 0, 0, 0)
+        Me.dateDiaTomado.MinDate = New Date(1993, 1, 1, 0, 0, 0, 0)
+        Me.dateDiaTomado.Name = "DateTimePicker1"
+        Me.dateDiaTomado.Size = New System.Drawing.Size(156, 20)
+        Me.dateDiaTomado.TabIndex = 9
         '
         'lblDiasTomados
         '
@@ -213,7 +213,7 @@ Partial Class FormVacacionesDetalle
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.dateDiaTomado)
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 36)
         Me.GroupBox1.Name = "GroupBox1"
@@ -372,7 +372,7 @@ Partial Class FormVacacionesDetalle
     Friend WithEvents txtDiasTomados As TextBox
     Friend WithEvents txtDiasGenerados As TextBox
     Friend WithEvents txtSaldo As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dateDiaTomado As DateTimePicker
     Friend WithEvents lblDiasTomados As Label
     Friend WithEvents lblVacacionesAcumuladas As Label
     Friend WithEvents lblSaldo As Label
