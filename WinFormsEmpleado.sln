@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinFormsEmpleado.Models", "
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinFormsEmpleado.DAL", "WinFormsEmpleado.DAL\WinFormsEmpleado.DAL.vbproj", "{A6E34185-1709-4175-AAA2-74756524EB96}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinFormsEmpleado.BLL", "WinFormsEmpleado.BLL\WinFormsEmpleado.BLL.vbproj", "{E3FEABF4-F0A3-42CE-852D-7FD2D29653D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A6E34185-1709-4175-AAA2-74756524EB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E34185-1709-4175-AAA2-74756524EB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E34185-1709-4175-AAA2-74756524EB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FEABF4-F0A3-42CE-852D-7FD2D29653D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FEABF4-F0A3-42CE-852D-7FD2D29653D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FEABF4-F0A3-42CE-852D-7FD2D29653D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FEABF4-F0A3-42CE-852D-7FD2D29653D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
