@@ -107,6 +107,12 @@
       <DependentUpon>FormPanel.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormVacaciones.designer.vb">
+      <DependentUpon>FormVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPanel.resx">
       <DependentUpon>FormPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVacaciones.resx">
+      <DependentUpon>FormVacaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
