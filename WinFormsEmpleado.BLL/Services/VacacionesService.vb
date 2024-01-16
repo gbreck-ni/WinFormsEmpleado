@@ -19,4 +19,10 @@ Public Class VacacionesService
     Public Function GetAll(empleadoId As Integer) As List(Of Vacaciones) Implements IVacacionesService.GetAll
         Return _repository.GetAll(empleadoId)
     End Function
+
+    Public Function CalcularVacacionesGeneradas(dateIni As Date, dateEnd As Date) As Decimal Implements IVacacionesService.CalcularVacacionesGeneradas
+        Dim mesCount As Int32
+        mesCount = ((dateEnd.Year - dateIni.Year) * 12) + dateEnd.Month - dateIni.Month
+        Return mesCount * 2.5
+    End Function
 End Class

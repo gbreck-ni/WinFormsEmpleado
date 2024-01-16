@@ -30,11 +30,11 @@ Public Class FormVacacionesDetalle
         txtSaldo.Text = saldo
     End Sub
 
-    Private Function CalcularVacacionesGeneradas(fechaInicio As DateTime, fechaFinal As DateTime) As Decimal
-        Dim mesCount As Int32
-        mesCount = ((fechaFinal.Year - fechaInicio.Year) * 12) + fechaFinal.Month - fechaInicio.Month
-        Return mesCount * 2.5
-    End Function
+    'Private Function CalcularVacacionesGeneradas(fechaInicio As DateTime, fechaFinal As DateTime) As Decimal
+    '    Dim mesCount As Int32
+    '    mesCount = ((fechaFinal.Year - fechaInicio.Year) * 12) + fechaFinal.Month - fechaInicio.Month
+    '    Return mesCount * 2.5
+    'End Function
     Private Sub ClearInput()
         _vacaciones = New Vacaciones()
     End Sub
@@ -116,7 +116,7 @@ Public Class FormVacacionesDetalle
             MessageBox.Show($"La fecha de inicio no debe ser mayor que la de final", "Vacaciones", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
-        txtDiasGenerados.Text = CalcularVacacionesGeneradas(dateFechaInicio.Value, dateFechaFinal.Value).ToString()
+        txtDiasGenerados.Text = _vacacionesService.CalcularVacacionesGeneradas(dateFechaInicio.Value, dateFechaFinal.Value).ToString()
     End Sub
 
     Private Sub dateFechaInicio_ValueChanged(sender As Object, e As EventArgs) Handles dateFechaInicio.ValueChanged
