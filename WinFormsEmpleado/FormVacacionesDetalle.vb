@@ -30,11 +30,6 @@ Public Class FormVacacionesDetalle
         txtSaldo.Text = saldo
     End Sub
 
-    'Private Function CalcularVacacionesGeneradas(fechaInicio As DateTime, fechaFinal As DateTime) As Decimal
-    '    Dim mesCount As Int32
-    '    mesCount = ((fechaFinal.Year - fechaInicio.Year) * 12) + fechaFinal.Month - fechaInicio.Month
-    '    Return mesCount * 2.5
-    'End Function
     Private Sub ClearInput()
         _vacaciones = New Vacaciones()
     End Sub
